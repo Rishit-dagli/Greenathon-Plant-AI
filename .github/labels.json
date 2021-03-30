@@ -62,5 +62,9 @@
   {
     "name": "WIP",
     "color": "c2e0c6"
+  },
+  {
+    "name": "models",
+    "color": "28EE87"
   }
 ]
