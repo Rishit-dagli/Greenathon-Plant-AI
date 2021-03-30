@@ -1,0 +1,33 @@
+name: Import labels
+
+on:
+  push:
+    paths:
+      - '.github/labels.json'
+  workflow_dispatch:
+
+jobs:
+  labels:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+      - name: checkout source files
+        uses: actions/checkout@v2
+
+      - name: use node.js v${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: install deps
+        run: npm ci
+
+      - name: import labels
+        if: github.ref == 'refs/heads/main'
+        run: |
+          npx ghlbl -o Rishit-dagli -r Greenathon-Plant-AI -t ${{ secrets.GITHUB_TOKEN }} -d
+          npx ghlbl -o Rishit-dagli -r Greenathon-Plant-AI -t ${{ secrets.GITHUB_TOKEN }} -i .github/labels.json
