@@ -24,7 +24,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: install deps
-        run: npm ci
+        run: npm install github-label-template
 
       - name: import labels
         if: github.ref == 'refs/heads/main'
