@@ -1,0 +1,432 @@
+@font-face {
+  font-family: "SF Pro Bold";
+  src: url(./fonts/SFProText-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "SF Pro Light";
+  src: url(./fonts/SFProText-Regular.ttf) format("truetype");
+}
+
+/* Body */
+
+body {
+  margin: 0%;
+}
+
+/* Header  */
+
+.header {
+  width: 100%;
+  height: 900px;
+
+  display: flex;
+  flex-direction: column;
+
+  background-image: url(./../assets/images/Background.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* Navbar  */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  margin-top: 0%;
+  height: 5em;
+  width: 100%;
+}
+
+/* Logo */
+
+.logo {
+  font-family: SF Pro Bold;
+  font-size: 64px;
+  color: white;
+  text-align: center;
+
+  text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.66);
+}
+
+/* Nav  */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 30%;
+}
+
+/* NavBar Links */
+
+.navbar-link {
+  font-family: SF Pro Bold;
+  font-size: 20px;
+  /* or 20px */
+
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+
+  color: white;
+
+  text-shadow: 6px -2px 4px #000000;
+}
+
+/* Header Text */
+
+.header-text {
+  font-family: SF Pro Bold;
+  font-size: 96px;
+  text-align: center;
+  color: white;
+
+  margin-top: 1.3em;
+
+  text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Button */
+
+.button {
+  padding: 0.5rem 0.7rem;
+  background: #b7eaaf;
+  border-radius: 7px;
+  border: none;
+
+  text-shadow: none;
+  letter-spacing: -1px;
+  text-align: center;
+  font-family: SF Pro Bold;
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+/* CTA */
+
+.cta {
+  width: 9rem;
+  height: 3rem;
+
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  cursor: pointer;
+
+  background: #b7eaaf;
+  border-radius: 7px;
+
+  text-align: center;
+  font-family: SF Pro Bold;
+  font-size: 1.3rem;
+  letter-spacing: -1px;
+}
+
+/* Instructions  */
+
+.instructions {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  left: 0px;
+  top: -18rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: linear-gradient(180deg, #055a3e 0%, #0d986a 100%);
+  border-radius: 96px 96px 0px 0px;
+
+  color: white;
+  font-family: SF Pro Bold;
+}
+
+.step-container {
+  width: 70rem;
+  padding-bottom: 5rem;
+
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: space-between;
+}
+
+.instruction-heading {
+  align-self: center;
+  font-size: 3rem;
+}
+
+/* Step */
+
+.step {
+  width: 14rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* align-content: center; */
+
+  text-align: center;
+}
+
+.icon {
+  padding: 1.5rem;
+
+  color: #cdffef;
+  font-size: 8rem;
+}
+
+.arrow-icon {
+  font-size: 5rem;
+  align-self: center;
+}
+
+.stepnum {
+  padding: 0.3rem;
+  width: 1.5rem;
+  height: 1.5rem;
+
+  border-radius: 50%;
+  background-color: #cdffef;
+  color: #000000;
+
+  font-size: 1.25rem;
+}
+
+.steptitle {
+  font-size: 1.7rem;
+}
+
+.stepdes {
+  font-family: SF Pro Light;
+}
+
+/* Blog */
+
+.blog {
+  margin: 0% 5%;
+  position: relative;
+  top: -15rem;
+  bottom: -15rem;
+}
+
+.blogpost {
+  display: flex;
+  align-content: center;
+
+  margin-bottom: 3rem;
+}
+
+.blog-img {
+  width: 80rem;
+  height: 18rem;
+  overflow: hidden;
+
+  align-self: center;
+}
+
+.blog-img > img {
+  height: 100%;
+  align-self: center;
+}
+
+.blog-text {
+  margin-left: 3rem;
+  align-self: flex-start;
+}
+
+.blog-title {
+  font-family: SF Pro Bold;
+  font-size: 3rem;
+}
+
+.blog-body {
+  font-family: SF Pro Light;
+  /* width: 80%; */
+}
+
+/* Footer */
+
+.footer {
+  position: relative;
+  height: 300px;
+  left: 0px;
+  top: 0%;
+
+  display: flex;
+  justify-content: center;
+
+  background: #055a3e;
+
+  color: white;
+}
+
+.link-group {
+  padding: 3rem;
+}
+
+.linkgroup-title {
+  font-family: SF Pro Bold;
+  font-size: 2rem;
+}
+
+.footer-link {
+  text-decoration: none;
+  font-family: SF Pro Light;
+  color: white;
+}
+
+/* Popup */
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  left: 50%;
+  right: 50%;
+}
+
+.popup > * {
+  margin: 1rem;
+}
+
+.popup:first-child {
+  font-size: 12rem;
+}
+
+.close-button {
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+/* Result Page */
+
+.resultpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 3rem;
+
+  font-family: SF Pro Bold;
+}
+
+.resultpage > .cta {
+  font-size: 0.9rem;
+
+  margin-bottom: 2rem;
+}
+
+.resultpage > img {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.issue-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 3rem;
+}
+
+.issue-counter {
+  font-size: 2.5rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.issue-counter-icon {
+  color: #ff9398;
+  padding-right: 1rem;
+  font-size: 3.5rem;
+}
+
+.issue {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width: 60%;
+  height: 8rem;
+  padding: 2rem;
+  margin-bottom: 3rem;
+
+  background-color: #0d986a;
+
+  color: white;
+
+  border-radius: 26px;
+}
+
+.issue > img {
+  height: 9rem;
+
+  border-radius: 26px;
+
+  align-self: center;
+}
+
+.issue-text {
+  width: 40%;
+  
+  margin: 2rem;
+}
+
+.issue-text > p {
+  font-family: SF Pro Light;
+}
+
+.issue-text > h3 {
+  font-size: 1.25rem;
+}
+
+.issue-label {
+  font-family: SF Pro Light;
+  color: #B7EAAF;
+  font-size: 1em;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.issue-label > * {
+  margin-right: 1.2rem;
+}
+
+.cure-button {
+  background-color: #055C3F;
+  height: 10rem;
+  width: 8rem;
+  border-radius: 26px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.cure-button-icon {
+  font-size: 4rem;
+  margin-top: 1.5rem;
+}
