@@ -362,7 +362,7 @@ nav {
   align-items: center;
   justify-content: space-evenly;
 
-  width: 60%;
+  width: 110%;
   height: 8rem;
   padding: 2rem;
   margin-bottom: 3rem;
@@ -373,6 +373,7 @@ nav {
 
   border-radius: 26px;
 }
+
 
 .issue > img {
   height: 9rem;
@@ -393,10 +394,10 @@ nav {
 }
 
 .issue-text > h3 {
-  font-size: 1.25rem;
+  font-size: 2rem;
 }
 
-.issue-label {
+/* .issue-label {
   font-family: SF Pro Light;
   color: #B7EAAF;
   font-size: 1em;
@@ -408,7 +409,7 @@ nav {
 
 .issue-label > * {
   margin-right: 1.2rem;
-}
+} */
 
 .cure-button {
   background-color: #055C3F;
