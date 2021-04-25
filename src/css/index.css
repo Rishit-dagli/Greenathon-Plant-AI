@@ -254,29 +254,21 @@ nav {
 
 .footer {
   position: relative;
-  height: 300px;
+  height: fit-content;
   left: 0px;
   top: 0%;
 
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+
+  padding-right: 2rem;
 
   background: #055a3e;
 
   color: white;
 }
 
-.link-group {
-  padding: 3rem;
-}
-
-.linkgroup-title {
-  font-family: SF Pro Bold;
-  font-size: 2rem;
-}
-
-.footer-link {
-  text-decoration: none;
+.copyright {
   font-family: SF Pro Light;
   color: white;
 }
