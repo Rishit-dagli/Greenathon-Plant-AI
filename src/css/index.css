@@ -536,4 +536,36 @@ nav {
   .blog-title {
     font-size: 2rem;
   }
+
+  .resultpage > img {
+    max-width: 80%;
+  }
+
+  .issue {
+    flex-direction: column;
+    align-self: center;
+
+    width: 80%;
+    height: fit-content;
+  }
+
+  .issue-counter {
+    font-size: 1.5rem;
+  }
+
+  .issue > img {
+    height: 12rem;
+    width: fit-content;
+  }
+
+  .cure-button {
+    height: 12rem;
+    width: 100%;
+  }
+
+  .close-button {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+  }
 }
