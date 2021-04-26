@@ -124,6 +124,8 @@ nav {
   font-family: SF Pro Bold;
   font-size: 1.3rem;
   letter-spacing: -1px;
+  text-decoration: none;
+  color: #000000;
 }
 
 /* Instructions  */

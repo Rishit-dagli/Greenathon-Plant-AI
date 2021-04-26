@@ -20,7 +20,10 @@ const ResultPage = ({image, getDiseases, onTryAnotherClick, onClose}) => {
         <img src={image} alt="Plant" id="plant-photo"/>
         <IssueContainer diseases={diseases}/>
         <CTA icon="cloud-upload-alt" text="Test Another" onClick={onTryAnotherClick}/>
-        <CTA icon="comments" text="Submit Feedback" />
+        <a href="https://forms.gle/bCNf3rMeKg71U95U9" className="cta">
+          <FontAwesomeIcon icon="comments" />
+          <p>Submit Feedback</p>
+        </a>
       </div>
 
       <FontAwesomeIcon className="close-button" icon="window-close" onClick={onClose}/>
