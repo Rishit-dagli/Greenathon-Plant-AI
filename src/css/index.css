@@ -11,6 +11,7 @@
 
 body {
   margin: 0%;
+  background-color: white;
 }
 
 /* Header  */
@@ -24,7 +25,7 @@ body {
 
   background-image: url(./../assets/images/Background.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 /* Navbar  */
@@ -43,9 +44,8 @@ body {
 
 .logo {
   font-family: SF Pro Bold;
-  font-size: 64px;
+  font-size: 3rem;
   color: white;
-  text-align: center;
 
   text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.66);
 }
@@ -80,7 +80,7 @@ nav {
 
 .header-text {
   font-family: SF Pro Bold;
-  font-size: 96px;
+  font-size: 5rem;
   text-align: center;
   color: white;
 
@@ -124,6 +124,8 @@ nav {
   font-family: SF Pro Bold;
   font-size: 1.3rem;
   letter-spacing: -1px;
+  text-decoration: none;
+  color: #000000;
 }
 
 /* Instructions  */
@@ -232,7 +234,6 @@ nav {
 
 .blog-img > img {
   height: 100%;
-  align-self: center;
 }
 
 .blog-text {
@@ -254,29 +255,23 @@ nav {
 
 .footer {
   position: relative;
-  height: 300px;
+  height: fit-content;
   left: 0px;
   top: 0%;
 
+  margin-top: -15%;
+
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+
+  padding-right: 2rem;
 
   background: #055a3e;
 
   color: white;
 }
 
-.link-group {
-  padding: 3rem;
-}
-
-.linkgroup-title {
-  font-family: SF Pro Bold;
-  font-size: 2rem;
-}
-
-.footer-link {
-  text-decoration: none;
+.copyright {
   font-family: SF Pro Light;
   color: white;
 }
@@ -362,7 +357,7 @@ nav {
   align-items: center;
   justify-content: space-evenly;
 
-  width: 60%;
+  width: 110%;
   height: 8rem;
   padding: 2rem;
   margin-bottom: 3rem;
@@ -384,7 +379,7 @@ nav {
 
 .issue-text {
   width: 40%;
-  
+
   margin: 2rem;
 }
 
@@ -393,10 +388,10 @@ nav {
 }
 
 .issue-text > h3 {
-  font-size: 1.25rem;
+  font-size: 2rem;
 }
 
-.issue-label {
+/* .issue-label {
   font-family: SF Pro Light;
   color: #B7EAAF;
   font-size: 1em;
@@ -408,10 +403,10 @@ nav {
 
 .issue-label > * {
   margin-right: 1.2rem;
-}
+} */
 
 .cure-button {
-  background-color: #055C3F;
+  background-color: #055c3f;
   height: 10rem;
   width: 8rem;
   border-radius: 26px;
@@ -429,4 +424,148 @@ nav {
 .cure-button-icon {
   font-size: 4rem;
   margin-top: 1.5rem;
+}
+
+/* Responsiveness Tablets & iPad */
+
+@media only screen and (max-width: 1200px) {
+  nav {
+    display: none;
+  }
+
+  .header-text {
+    font-size: 4rem;
+  }
+
+  .instructions {
+    border-radius: 40px 40px 0px 0px;
+
+    top: -22rem;
+  }
+
+  .instruction-heading {
+    font-size: 2.5rem;
+  }
+
+  .step-container {
+    width: auto;
+    justify-content: space-around;
+  }
+
+  .step {
+    width: 90%;
+  }
+
+  .icon {
+    font-size: 5rem;
+  }
+
+  .arrow-icon {
+    display: none;
+  }
+
+  .steptitle {
+    width: 80%;
+  }
+
+  .stepdes {
+    margin-top: -5%;
+    margin-bottom: 10%;
+    width: 70%;
+  }
+
+  .blog-title {
+    font-size: 2rem;
+  }
+}
+
+/* Responsiveness Mobile Devices */
+
+@media only screen and (max-width: 600px) {
+  nav {
+    display: none;
+  }
+
+  .header-text {
+    font-size: 3rem;
+  }
+
+  .instructions {
+    border-radius: 30px 30px 0px 0px;
+
+    top: -22rem;
+  }
+
+  .instruction-heading {
+    font-size: 2rem;
+  }
+
+  .step-container {
+    width: auto;
+    flex-direction: column;
+  }
+
+  .icon {
+    font-size: 5rem;
+  }
+
+  .arrow-icon {
+    display: none;
+  }
+
+  .stepdes {
+    margin-top: -5%;
+    margin-bottom: 10%;
+  }
+
+  .blogpost {
+    flex-direction: column;
+  }
+
+  .blog-img {
+    width: 100%;
+    height: 10rem;
+
+    align-self: flex-start;
+  }
+
+  .blog-text {
+    margin-left: 0%;
+  }
+
+  .blog-title {
+    font-size: 2rem;
+  }
+
+  .resultpage > img {
+    max-width: 80%;
+  }
+
+  .issue {
+    flex-direction: column;
+    align-self: center;
+
+    width: 80%;
+    height: fit-content;
+  }
+
+  .issue-counter {
+    font-size: 1.5rem;
+  }
+
+  .issue > img {
+    height: 12rem;
+    width: fit-content;
+  }
+
+  .cure-button {
+    height: 12rem;
+    width: 100%;
+  }
+
+  .close-button {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+  }
 }
