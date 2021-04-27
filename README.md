@@ -18,6 +18,12 @@ Click to View Plant AI web app Design from below
 
 [![Plant AI Design](https://img.shields.io/badge/PlantAI-FIGMA-black.svg?style=for-the-badge&logo=figma)](https://www.figma.com/file/RbfBDLPgNNTtLp5xmvJEEH/Plant-AI-Hackathon-Website)
 
+## Contributors
+
+- [Rishit Dagli](https://github.com/Rishit-dagli)
+- [Rishabh Singh](https://github.com/mindninjaX)
+- [Rucha Yagnik](https://github.com/RuchaYagnik)
+
 ## License
 
 ```
