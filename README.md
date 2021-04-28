@@ -10,7 +10,7 @@ This is a web application🌐 which could help easily diagnose diseases in plant
 
 ***You can use and test the latest web app from below 👇***
 
-[![Launch Example](https://img.shields.io/badge/launch-example-red?style=for-the-badge&logo=google-chrome)](https://mirnet-tfjs-demo.azurewebsites.net/)
+[![Launch Example](https://img.shields.io/badge/launch-example-red?style=for-the-badge&logo=google-chrome)](http://www.plant-ai.tech/)
 
 ## UI Design 🎨
 
