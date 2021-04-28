@@ -538,7 +538,7 @@ nav {
   }
 
   .resultpage > img {
-    max-width: 80%;
+    max-width: 70%;
   }
 
   .issue {
@@ -551,6 +551,9 @@ nav {
 
   .issue-counter {
     font-size: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
   }
 
   .issue > img {
