@@ -219,21 +219,20 @@ nav {
 
 .blogpost {
   display: flex;
-  align-content: center;
 
   margin-bottom: 3rem;
 }
 
 .blog-img {
-  width: 80rem;
-  height: 18rem;
-  overflow: hidden;
+  width: auto;
+  /* height: 18rem; */
+  /* overflow: hidden; */
 
   align-self: center;
 }
 
 .blog-img > img {
-  height: 100%;
+  height: 13rem;
 }
 
 .blog-text {
@@ -505,6 +504,10 @@ nav {
     flex-direction: column;
   }
 
+  .step {
+    width: auto;
+  }
+
   .icon {
     font-size: 5rem;
   }
@@ -523,8 +526,8 @@ nav {
   }
 
   .blog-img {
-    width: 100%;
-    height: 10rem;
+    width: auto;
+    /* height: 10rem; */
 
     align-self: flex-start;
   }
