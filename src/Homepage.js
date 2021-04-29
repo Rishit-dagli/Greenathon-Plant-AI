@@ -83,6 +83,13 @@ class Homepage extends Component {
   }
 
   predictDisease = async () => {
+    while (!this.state.tfModel) {
+      await new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve(true);
+        }, 500)
+      })
+    }
     let img = document.getElementById('plant-photo')
 
     let offset = tf.scalar(255)
