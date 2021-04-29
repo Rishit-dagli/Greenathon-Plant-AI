@@ -19,6 +19,16 @@ Click to View Plant AI web app Design from below
 
 [![Plant AI Design](https://img.shields.io/badge/PlantAI-FIGMA-black.svg?style=for-the-badge&logo=figma)](https://www.figma.com/file/RbfBDLPgNNTtLp5xmvJEEH/Plant-AI-Hackathon-Website)
 
+## Lint ✅
+This project uses [***GitHub Super Linter***](https://github.com/github/super-linter) which is Combination of multiple linters to install as a GitHub Action.
+
+Following Linters are used internally by super linter (enabled for this project):
+- JavaScript: [eslint](https://eslint.org/)
+- CSS: [stylelint](https://stylelint.io/)
+- HTML: [HTMLHint](https://github.com/htmlhint/HTMLHint)
+- JSON: [jsonlint](https://github.com/zaach/jsonlint)
+- YAML: [YamlLint](https://github.com/adrienverge/yamllint)
+
 ## Contributors
 
 - [Rishit Dagli](https://github.com/Rishit-dagli)
