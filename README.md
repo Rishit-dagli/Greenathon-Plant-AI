@@ -1,6 +1,7 @@
 # Greenathon-Plant-AI🌱 [![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2FRishit-dagli%2FGreenathon-Plant-AI)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FRishit-dagli%2FGreenathon-Plant-AI)
 
 [![Azure Static Web Apps CI/CD](https://github.com/Rishit-dagli/Greenathon-Plant-AI/actions/workflows/azure-static-web-apps-mango-forest-0c00d3400.yml/badge.svg)](https://github.com/Rishit-dagli/Greenathon-Plant-AI/actions/workflows/azure-static-web-apps-mango-forest-0c00d3400.yml)
+[![Lint Code Base](https://github.com/Rishit-dagli/Greenathon-Plant-AI/actions/workflows/linter.yml/badge.svg)](https://github.com/Rishit-dagli/Greenathon-Plant-AI/actions/workflows/linter.yml)
 
 [![GitHub license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/Rishit-dagli/Greenathon-Plant-AI?style=social)](https://github.com/Rishit-dagli/Greenathon-Plant-AI/stargazers)
