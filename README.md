@@ -13,6 +13,12 @@ This is a web application🌐 which could help easily diagnose diseases in plant
 
 [![Launch Example](https://img.shields.io/badge/launch-example-red?style=for-the-badge&logo=google-chrome)](http://www.plant-ai.tech/)
 
+## UI Design 🎨
+
+Click to View Plant AI web app Design from below
+
+[![Plant AI Design](https://img.shields.io/badge/PlantAI-FIGMA-black.svg?style=for-the-badge&logo=figma)](https://www.figma.com/file/RbfBDLPgNNTtLp5xmvJEEH/Plant-AI-Hackathon-Website)
+
 ## Run Locally
 
 To get up and running with this web-app, run the following commands, make sure you have [Node.js](http://nodejs.org/) installed.
@@ -30,12 +36,6 @@ npm start
 ```
 
 Your app should now be running on [localhost:3000](http://localhost:3000) :rocket:.
-
-## UI Design 🎨
-
-Click to View Plant AI web app Design from below
-
-[![Plant AI Design](https://img.shields.io/badge/PlantAI-FIGMA-black.svg?style=for-the-badge&logo=figma)](https://www.figma.com/file/RbfBDLPgNNTtLp5xmvJEEH/Plant-AI-Hackathon-Website)
 
 ## Lint ✅
 This project uses [***GitHub Super Linter***](https://github.com/github/super-linter) which is Combination of multiple linters to install as a GitHub Action.
