@@ -19,12 +19,12 @@ class Homepage extends Component {
 
   async componentDidMount() {
 
-    let response = await fetch('./models/class_indices.json');
+    let response = await fetch('https://coverimages.blob.core.windows.net/plantai-tfjs-model/class_indices.json');
     let labels = await response.json();
     labels = JSON.stringify(labels);
     labels = JSON.parse(labels);
 
-    let tfModel = await tf.loadLayersModel('./models/model.json');
+    let tfModel = await tf.loadLayersModel('https://coverimages.blob.core.windows.net/plantai-tfjs-model/model.json');
 
     this.setState({
       labels,
