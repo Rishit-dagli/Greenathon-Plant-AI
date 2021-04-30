@@ -7,11 +7,19 @@
 [![GitHub stars](https://img.shields.io/github/stars/Rishit-dagli/Greenathon-Plant-AI?style=social)](https://github.com/Rishit-dagli/Greenathon-Plant-AI/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/Rishit-dagli/Greenathon-Plant-AI?style=social)](https://github.com/Rishit-dagli/Greenathon-Plant-AI/network/members)
 
-This is a web application🌐 which could help easily diagnose diseases in plants🌱 using Machine Learning all on the web, originally built for the Microsoft Greenathon. 
+This is a web application🌐 which could help easily diagnose diseases in plants
+🌱 using Machine Learning all on the web, powered by TensorFlow JS. 
 
 ***You can use and test the latest web app from below 👇***
 
 [![Launch Example](https://img.shields.io/badge/launch-example-red?style=for-the-badge&logo=google-chrome)](http://www.plant-ai.tech/)
+
+## About
+
+- Creates a TensorFlow Model for identifying plant diseases
+- Creates optimized TensorFlow JS Models
+- Uses TensorFlow JS to perform inferences on-device
+- Creates a fully functional web app using React
 
 ## UI Design 🎨
 
