@@ -25,8 +25,10 @@ body {
 .header {
   width: 100%;
   height: 900px;
+
   display: flex;
   flex-direction: column;
+
   background-image: url(./../assets/images/Background.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -38,6 +40,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+
   margin-top: 0%;
   height: 5em;
   width: 100%;
@@ -49,7 +52,8 @@ body {
   font-family: var(--sf-pro-bold-font-family);
   font-size: 3rem;
   color: white;
-  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.66);
+
+  text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.66);
 }
 
 /* Nav  */
@@ -58,6 +62,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   width: 30%;
 }
 
@@ -66,14 +71,15 @@ nav {
 .navbar-link {
   font-family: var(--sf-pro-bold-font-family);
   font-size: 20px;
-
   /* or 20px */
 
   text-align: center;
   text-decoration: none;
   cursor: pointer;
+
   color: white;
-  text-shadow: 6px -2px 4px #000;
+
+  text-shadow: 6px -2px 4px #000000;
 }
 
 /* Header Text */
@@ -83,8 +89,10 @@ nav {
   font-size: 5rem;
   text-align: center;
   color: white;
+
   margin-top: 1.3em;
-  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+
+  text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
 }
 
 /* Button */
@@ -94,12 +102,13 @@ nav {
   background: #b7eaaf;
   border-radius: 7px;
   border: none;
+
   text-shadow: none;
   letter-spacing: -1px;
   text-align: center;
   font-family: var(--sf-pro-bold-font-family);
   font-size: 1.2rem;
-  color: #000;
+  color: #000000;
 }
 
 /* CTA */
@@ -107,19 +116,22 @@ nav {
 .cta {
   width: 9rem;
   height: 3rem;
+
   display: flex;
   justify-content: center;
   align-self: center;
   align-items: center;
   cursor: pointer;
+
   background: #b7eaaf;
   border-radius: 7px;
+
   text-align: center;
   font-family: var(--sf-pro-bold-font-family);
   font-size: 1.3rem;
   letter-spacing: -1px;
   text-decoration: none;
-  color: #000;
+  color: #000000;
 }
 
 /* Instructions  */
@@ -128,13 +140,16 @@ nav {
   position: relative;
   width: 100%;
   height: fit-content;
-  left: 0;
+  left: 0px;
   top: -18rem;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   background: linear-gradient(180deg, #055a3e 0%, #0d986a 100%);
-  border-radius: 96px 96px 0 0;
+  border-radius: 96px 96px 0px 0px;
+
   color: white;
   font-family: var(--sf-pro-bold-font-family);
 }
@@ -142,6 +157,7 @@ nav {
 .step-container {
   width: 70rem;
   padding-bottom: 5rem;
+
   display: flex;
   flex-direction: row;
   align-self: center;
@@ -157,10 +173,10 @@ nav {
 
 .step {
   width: 14rem;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-
   /* align-content: center; */
 
   text-align: center;
@@ -168,6 +184,7 @@ nav {
 
 .icon {
   padding: 1.5rem;
+
   color: #cdffef;
   font-size: 8rem;
 }
@@ -181,9 +198,11 @@ nav {
   padding: 0.3rem;
   width: 1.5rem;
   height: 1.5rem;
+
   border-radius: 50%;
   background-color: #cdffef;
-  color: #000;
+  color: #000000;
+
   font-size: 1.25rem;
 }
 
@@ -206,19 +225,20 @@ nav {
 
 .blogpost {
   display: flex;
-  align-content: center;
+
   margin-bottom: 3rem;
 }
 
 .blog-img {
-  width: 80rem;
-  height: 18rem;
-  overflow: hidden;
+  width: auto;
+  /* height: 18rem; */
+  /* overflow: hidden; */
+
   align-self: center;
 }
 
 .blog-img > img {
-  height: 100%;
+  height: 13rem;
 }
 
 .blog-text {
@@ -233,7 +253,6 @@ nav {
 
 .blog-body {
   font-family: var(--sf-pro-light-font-family);
-
   /* width: 80%; */
 }
 
@@ -242,13 +261,18 @@ nav {
 .footer {
   position: relative;
   height: fit-content;
-  left: 0;
+  left: 0px;
   top: 0%;
+
   margin-top: -15%;
+
   display: flex;
   justify-content: flex-end;
+
   padding-right: 2rem;
+
   background: #055a3e;
+
   color: white;
 }
 
@@ -264,6 +288,7 @@ nav {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+
   position: absolute;
   top: 50%;
   bottom: 50%;
@@ -292,12 +317,15 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   margin-top: 3rem;
+
   font-family: var(--sf-pro-bold-font-family);
 }
 
 .resultpage > .cta {
   font-size: 0.9rem;
+
   margin-bottom: 2rem;
 }
 
@@ -310,11 +338,13 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   margin-top: 3rem;
 }
 
 .issue-counter {
   font-size: 2.5rem;
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -331,23 +361,30 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+
   width: 110%;
   height: 8rem;
   padding: 2rem;
   margin-bottom: 3rem;
+
   background-color: #0d986a;
+
   color: white;
+
   border-radius: 26px;
 }
 
 .issue > img {
   height: 9rem;
+
   border-radius: 26px;
+
   align-self: center;
 }
 
 .issue-text {
   width: 40%;
+
   margin: 2rem;
 }
 
@@ -363,12 +400,10 @@ nav {
   font-family: var(--sf-pro-light-font-family);
   color: #B7EAAF;
   font-size: 1em;
-
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-
 .issue-label > * {
   margin-right: 1.2rem;
 } */
@@ -378,10 +413,12 @@ nav {
   height: 10rem;
   width: 8rem;
   border-radius: 26px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   color: white;
   text-decoration: none;
   font-size: 1.2rem;
@@ -404,7 +441,8 @@ nav {
   }
 
   .instructions {
-    border-radius: 40px 40px 0 0;
+    border-radius: 40px 40px 0px 0px;
+
     top: -22rem;
   }
 
@@ -456,7 +494,8 @@ nav {
   }
 
   .instructions {
-    border-radius: 30px 30px 0 0;
+    border-radius: 30px 30px 0px 0px;
+
     top: -22rem;
   }
 
@@ -467,6 +506,10 @@ nav {
   .step-container {
     width: auto;
     flex-direction: column;
+  }
+
+  .step {
+    width: auto;
   }
 
   .icon {
@@ -487,8 +530,9 @@ nav {
   }
 
   .blog-img {
-    width: 100%;
-    height: 10rem;
+    width: auto;
+    /* height: 10rem; */
+
     align-self: flex-start;
   }
 
@@ -501,18 +545,22 @@ nav {
   }
 
   .resultpage > img {
-    max-width: 80%;
+    max-width: 70%;
   }
 
   .issue {
     flex-direction: column;
     align-self: center;
+
     width: 80%;
     height: fit-content;
   }
 
   .issue-counter {
     font-size: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
   }
 
   .issue > img {
