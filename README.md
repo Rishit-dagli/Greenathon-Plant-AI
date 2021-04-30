@@ -13,6 +13,24 @@ This is a web application🌐 which could help easily diagnose diseases in plant
 
 [![Launch Example](https://img.shields.io/badge/launch-example-red?style=for-the-badge&logo=google-chrome)](http://www.plant-ai.tech/)
 
+## Run Locally
+
+To get up and running with this web-app, run the following commands, make sure you have [Node.js](http://nodejs.org/) installed.
+
+```sh
+git clone https://github.com/Rishit-dagli/Greenathon-Plant-AI # or clone your own fork
+cd Greenathon-Plant-AI
+```
+
+This runs the app in development mode:
+
+```sh
+npm install
+npm start
+```
+
+Your app should now be running on [localhost:3000](http://localhost:3000) :rocket:.
+
 ## UI Design 🎨
 
 Click to View Plant AI web app Design from below
