@@ -85,6 +85,19 @@ Have any questions, doubts or want to present your opinions, views? You're alway
 - [Rishabh Singh](https://github.com/mindninjaX)
 - [Rucha Yagnik](https://github.com/RuchaYagnik)
 
+## Citations
+
+```bibtex
+@misc{hughes2016open,
+      title={An open access repository of images on plant health to enable the development of mobile disease diagnostics}, 
+      author={David. P. Hughes and Marcel Salathe},
+      year={2016},
+      eprint={1511.08060},
+      archivePrefix={arXiv},
+      primaryClass={cs.CY}
+}
+```
+
 ## License
 
 ```
