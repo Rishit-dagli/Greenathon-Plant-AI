@@ -29,6 +29,14 @@ Following Linters are used internally by super linter (enabled for this project)
 - JSON: [jsonlint](https://github.com/zaach/jsonlint)
 - YAML: [YamlLint](https://github.com/adrienverge/yamllint)
 
+## Want to Contribute 🙋‍♂️?
+
+Awesome! If you want to contribute to this project, you're always welcome! See [Contributing Guidelines](CONTRIBUTING.md). You can also take a look at [Greenathon-Plant-AI's Project Status Tracker](https://github.com/Rishit-dagli/Greenathon-Plant-AI/projects/1) for getting more information about current or upcoming tasks.
+
+## Want to discuss? 💬
+
+Have any questions, doubts or want to present your opinions, views? You're always welcome. You can [start discussions](https://github.com/Rishit-dagli/Greenathon-Plant-AI/discussions).
+
 ## Contributors
 
 - [Rishit Dagli](https://github.com/Rishit-dagli)
