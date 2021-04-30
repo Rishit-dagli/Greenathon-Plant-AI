@@ -2,7 +2,7 @@
 <!-- Show us what you've changed, we love images. -->
 
 ## :page_facing_up: Context
-<!-- Why did you change something? Is there an [issue](https://github.com/Rishit-dagli/MIRNet-TFJS/issues) to link here? Or an external link? -->
+<!-- Why did you change something? Is there an [issue](https://github.com/Rishit-dagli/Greenathon-Plant-AI/issues) to link here? Or an external link? -->
 
 ## :pencil: Changes
 <!-- Which code did you change? How? -->

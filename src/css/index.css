@@ -1,7 +1,13 @@
+:root {
+  --sf-pro-bold-font-family: "SF Pro Bold";
+  --sf-pro-light-font-family: "SF Pro Light";
+}
+
 @font-face {
   font-family: "SF Pro Bold";
   src: url(./fonts/SFProText-Bold.ttf) format("truetype");
 }
+
 @font-face {
   font-family: "SF Pro Light";
   src: url(./fonts/SFProText-Regular.ttf) format("truetype");
@@ -43,7 +49,7 @@ body {
 /* Logo */
 
 .logo {
-  font-family: SF Pro Bold;
+  font-family: var(--sf-pro-bold-font-family);
   font-size: 3rem;
   color: white;
 
@@ -63,7 +69,7 @@ nav {
 /* NavBar Links */
 
 .navbar-link {
-  font-family: SF Pro Bold;
+  font-family: var(--sf-pro-bold-font-family);
   font-size: 20px;
   /* or 20px */
 
@@ -79,7 +85,7 @@ nav {
 /* Header Text */
 
 .header-text {
-  font-family: SF Pro Bold;
+  font-family: var(--sf-pro-bold-font-family);
   font-size: 5rem;
   text-align: center;
   color: white;
@@ -100,7 +106,7 @@ nav {
   text-shadow: none;
   letter-spacing: -1px;
   text-align: center;
-  font-family: SF Pro Bold;
+  font-family: var(--sf-pro-bold-font-family);
   font-size: 1.2rem;
   color: #000000;
 }
@@ -121,7 +127,7 @@ nav {
   border-radius: 7px;
 
   text-align: center;
-  font-family: SF Pro Bold;
+  font-family: var(--sf-pro-bold-font-family);
   font-size: 1.3rem;
   letter-spacing: -1px;
   text-decoration: none;
@@ -145,7 +151,7 @@ nav {
   border-radius: 96px 96px 0px 0px;
 
   color: white;
-  font-family: SF Pro Bold;
+  font-family: var(--sf-pro-bold-font-family);
 }
 
 .step-container {
@@ -205,7 +211,7 @@ nav {
 }
 
 .stepdes {
-  font-family: SF Pro Light;
+  font-family: var(--sf-pro-light-font-family);
 }
 
 /* Blog */
@@ -241,12 +247,12 @@ nav {
 }
 
 .blog-title {
-  font-family: SF Pro Bold;
+  font-family: var(--sf-pro-bold-font-family);
   font-size: 3rem;
 }
 
 .blog-body {
-  font-family: SF Pro Light;
+  font-family: var(--sf-pro-light-font-family);
   /* width: 80%; */
 }
 
@@ -271,7 +277,7 @@ nav {
 }
 
 .copyright {
-  font-family: SF Pro Light;
+  font-family: var(--sf-pro-light-font-family);
   color: white;
 }
 
@@ -314,7 +320,7 @@ nav {
 
   margin-top: 3rem;
 
-  font-family: SF Pro Bold;
+  font-family: var(--sf-pro-bold-font-family);
 }
 
 .resultpage > .cta {
@@ -383,7 +389,7 @@ nav {
 }
 
 .issue-text > p {
-  font-family: SF Pro Light;
+  font-family: var(--sf-pro-light-font-family);
 }
 
 .issue-text > h3 {
@@ -391,15 +397,13 @@ nav {
 }
 
 /* .issue-label {
-  font-family: SF Pro Light;
+  font-family: var(--sf-pro-light-font-family);
   color: #B7EAAF;
   font-size: 1em;
-
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-
 .issue-label > * {
   margin-right: 1.2rem;
 } */
