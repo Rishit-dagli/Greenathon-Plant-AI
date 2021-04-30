@@ -48,16 +48,13 @@ also shows performing optimizations on this.
 
 ## Run Locally
 
-To get up and running with this web-app, run the following commands, make sure you have [Node.js](http://nodejs.org/) installed.
+To get up and running with this web-app, run the following commands, make sure 
+you have [Node.js](http://nodejs.org/) installed. This runs the app in 
+development mode:
 
 ```sh
 git clone https://github.com/Rishit-dagli/Greenathon-Plant-AI # or clone your own fork
 cd Greenathon-Plant-AI
-```
-
-This runs the app in development mode:
-
-```sh
 npm install
 npm start
 ```
