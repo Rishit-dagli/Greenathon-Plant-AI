@@ -61,6 +61,7 @@ npm install
 npm start
 ```
 
+<!-- markdown-link-check-disable-next-line -->
 Your app should now be running on [localhost:3000](http://localhost:3000) :rocket:.
 
 ## Lint ✅
