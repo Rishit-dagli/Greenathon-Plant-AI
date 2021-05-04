@@ -44,9 +44,14 @@ TensorFlow `SavedModel`.
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Rishit-dagli/Greenathon-Plant-AI/blob/main/notebooks/plant_diseases_TFJS.ipynb)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Rishit-dagli/Greenathon-Plant-AI/HEAD?filepath=notebooks%2Fplant_diseases_TFJS.ipynb)
 
-This notebook shows the the process of converting the TensorFlow `SavedModel` 
-to the TFJS format we built in the prequel notebook for the Plant AI model. It 
+This notebook shows the the process of converting the TensorFlow `SavedModel` we built in the prequel notebook to the TFJS format for the Plant AI model. It 
 also shows performing optimizations on this.
+
+### [`plant_diseases_TFJS.ipynb`](notebooks/plant_diseases_TFLite.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Rishit-dagli/Greenathon-Plant-AI/blob/main/notebooks/plant_diseases_TFLite.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Rishit-dagli/Greenathon-Plant-AI/HEAD?filepath=notebooks%2Fplant_diseases_TFLite.ipynb)
+
+This notebook shows the the process of converting the TensorFlow `SavedModel` we built in the prequel notebook to the TF Lite format for the Plant AI model.
 
 ## Run Locally
 
