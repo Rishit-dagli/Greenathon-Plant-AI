@@ -48,7 +48,7 @@ This notebook shows the the process of converting the TensorFlow `SavedModel` we
 also shows performing optimizations on this.
 
 ### [`plant_diseases_TFLite.ipynb`](notebooks/plant_disease_TFLite.ipynb)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Rishit-dagli/Greenathon-Plant-AI/blob/main/notebooks/plant_diseases_TFLite.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Rishit-dagli/Greenathon-Plant-AI/blob/main/notebooks/plant_disease_TFLite.ipynb)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Rishit-dagli/Greenathon-Plant-AI/HEAD?filepath=notebooks%2Fplant_diseases_TFLite.ipynb)
 
 This notebook shows the the process of converting the TensorFlow `SavedModel` we built in the prequel notebook to the TF Lite format for the Plant AI model.
