@@ -16,12 +16,13 @@ This is a web application🌐 which could help easily diagnose diseases in plant
 
 [![Launch Example](https://img.shields.io/badge/launch-example-red?style=for-the-badge&logo=google-chrome)](http://www.plant-ai.tech/)
 
-## About
+## About 🔮
 
 - Creates a TensorFlow Model for identifying plant diseases
 - Creates optimized TensorFlow JS Models
 - Uses TensorFlow JS to perform inferences on-device
 - Creates a fully functional web app using React
+- Exposes a hosted API built with TensorFlow Serving for inferences from the TensorFlow Model
 
 ## UI Design 🎨
 
