@@ -71,3 +71,29 @@ After doing so our TFJS format model has the following files, which would be loa
 Now that we have our TFJS model ready to be used, we wanted to allow us to run the TFJS model on browsers. To do so we again made use of the TensorFlow JS Converter that includes an API for loading and executing the model in the browser with TensorFlow.js🚀. We are excited to run our model on the client-side since this ability to run deep networks on personal mobile devices improves user experience, offering anytime, anywhere access, with additional benefits for security, privacy, and energy consumption.
 
 To further make our model even more accessible and usable to others in the community we also provide a hosted model API built with [TensorFlow Serving](https://www.tensorflow.org/tfx) and hosted with Azure Container Instances at this stage. This makes it easier than ever to use our model, now just a single API call away!🚀
+
+## Designing the web app
+
+One of our major aims while building Plant AI was to make high-quality disease detection accessible to most crop growers. To do so we had to design the web app in a manner that it was easy enough to use this project on a daily basis and also be accessible to all. Thus, we decided to build Plant AI in the form of a web app to make it easily accessible and usable by crop growers.
+
+As mentioned earlier, the design and UX of our project is focused on ease of use and simplicity. The basic frontend of Plant AI contains just a minimal landing page and two other subpages. All pages were designed using custom reusable components, improving the overall performance of the web app and helping keep the design consistent across the web app.
+
+While designing Plant AI, we aimed at the above mentioned best practices so the first thing we did is to get a UI/UX wireframe.
+
+[![Plant AI Design](https://img.shields.io/badge/PlantAI-FIGMA-black.svg?style=for-the-badge&logo=figma)](https://www.figma.com/file/RbfBDLPgNNTtLp5xmvJEEH/Plant-AI-Hackathon-Website)
+
+## Building the web app
+
+Once the UI/UX wireframe was ready and a frontend structure was available for further development, we worked to transform the Static React Application into a Dynamic web app. The idea was to provide an easy and quick navigation experience throughout the web app. For this, we linked the different parts of the website in such a manner that all of them were accessible right from the home page.
+
+![](media/web-landing-page.PNG)
+<p align="center">
+Web landing page
+</p>
+
+We then worked on allowing the Machine Learning model on the web app. Fortunately, we had already worked on optimizing our models to run on the client-side on the web using the TFJS Converter. We load our model from Azure Blob Storage, or model weights are also loaded as sharded 4MB files so that they can be cached by browsers.
+
+Once we can access the models we load them using TFJS converter model loading APIs by making individual HTTP(S) requests for loading the model.json file (the dataflow graph and weight manifest) and the sharded weight file in the mentioned order. This approach allows all of these files to be cached by the browser (and perhaps by additional caching servers on the internet) because the model.json and the weight shards are each smaller than the typical cache file size limit. Thus a model is likely to load more quickly on subsequent occasions.
+
+We first normalize our images that is to convert image pixel values from 0 to 255 to 0 to 1 since our model has a MobileNet backbone. After doing so we resize our image to 244 by 244 pixels using nearest neighbor interpolation though our model works quite well on other dimensions too. After doing so we use the TensorFlow JS APIs and the loaded model to get predictions on plant images.
+
