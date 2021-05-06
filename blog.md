@@ -82,7 +82,7 @@ While designing Plant AI, we aimed at the above mentioned best practices so the 
 
 [![Plant AI Design](https://img.shields.io/badge/PlantAI-FIGMA-black.svg?style=for-the-badge&logo=figma)](https://www.figma.com/file/RbfBDLPgNNTtLp5xmvJEEH/Plant-AI-Hackathon-Website)
 
-## Building the web app
+## Building and hosting the web app
 
 Once the UI/UX wireframe was ready and a frontend structure was available for further development, we worked to transform the Static React Application into a Dynamic web app. The idea was to provide an easy and quick navigation experience throughout the web app. For this, we linked the different parts of the website in such a manner that all of them were accessible right from the home page.
 
@@ -100,6 +100,8 @@ We then worked on running the Machine Learning model on the web app. Fortunately
 Once we can access the models we load them using TFJS converter model loading APIs by making individual HTTP(S) requests for loading the model.json file (the dataflow graph and weight manifest) and the sharded weight file in the mentioned order. This approach allows all of these files to be cached by the browser (and perhaps by additional caching servers on the internet) because the model.json and the weight shards are each smaller than the typical cache file size limit. Thus a model is likely to load more quickly on subsequent occasions.
 
 We first normalize our images that is to convert image pixel values from 0 to 255 to 0 to 1 since our model has a MobileNet backbone. After doing so we resize our image to 244 by 244 pixels using nearest neighbor interpolation though our model works quite well on other dimensions too. After doing so we use the TensorFlow JS APIs and the loaded model to get predictions on plant images.
+
+Hosting the web app we built was made quite easy for us using Azure Static Web Apps. This allowed us to easily set up a CI/ CD Pipeline and Staging slots with GitHub Actions (Azure's Static Web App Deploy action) to deploy the app to Azure. With Azure Static Web Apps, static assets are separated from a traditional web server and are instead served from points geographically distributed around the world right out of the box for us. This distribution makes serving files much faster as files are physically closer to end users.
 
 ## Future Ideas
 
