@@ -91,7 +91,11 @@ Once the UI/UX wireframe was ready and a frontend structure was available for fu
 Web landing page
 </p>
 
-We then worked on allowing the Machine Learning model on the web app. Fortunately, we had already worked on optimizing our models to run on the client-side on the web using the TFJS Converter. We load our model from Azure Blob Storage, or model weights are also loaded as sharded 4MB files so that they can be cached by browsers.
+Since our application is built with React, we already had a state management library with our application which integrates quite well with React packages and is well documented. By state, we here refer to the UI state and use it to control interactive parts of the web app. We managed the state using a React hook, `useState`. This hook allows us to preserve some state variables across multiple function calls and easily make edits too.
+
+The `useState` hook is often perfect for small amounts of local component state. This was a perfect choice for our web app, thus we manage state using `useState`.
+
+We then worked on running the Machine Learning model on the web app. Fortunately, we had already worked on optimizing our models to run on the client-side on the web using the TFJS Converter. We load our model from Azure Blob Storage, and model weights are also loaded as sharded 4MB files so that they can be cached by browsers.
 
 Once we can access the models we load them using TFJS converter model loading APIs by making individual HTTP(S) requests for loading the model.json file (the dataflow graph and weight manifest) and the sharded weight file in the mentioned order. This approach allows all of these files to be cached by the browser (and perhaps by additional caching servers on the internet) because the model.json and the weight shards are each smaller than the typical cache file size limit. Thus a model is likely to load more quickly on subsequent occasions.
 
