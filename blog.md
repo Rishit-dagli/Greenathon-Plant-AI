@@ -97,3 +97,18 @@ Once we can access the models we load them using TFJS converter model loading AP
 
 We first normalize our images that is to convert image pixel values from 0 to 255 to 0 to 1 since our model has a MobileNet backbone. After doing so we resize our image to 244 by 244 pixels using nearest neighbor interpolation though our model works quite well on other dimensions too. After doing so we use the TensorFlow JS APIs and the loaded model to get predictions on plant images.
 
+## Future Ideas
+
+We are always looking for new ideas or addressing bug reports from the community. Our project is completely open-sourced and we are very excited if you have some feedback, feature request, or a bug report apart from the ones we mention here, please consider contributing to this project by creating an issue or a Pull Request on our [GitHub repo](https://github.com/Rishit-dagli/Greenathon-Plant-AI/issues)!
+
+One of the top ideas we are working on as of now is transforming our web app into a progressive web app to allow us to take advantage of features supported by modern browsers like service workers and web app manifests. We are working on this to allow us to support:
+- Offline mode
+- Improve performance, using service workers
+- Use platform-specific features, which would allow us to send push notifications and use location data to better help crop growers
+- Considerably less bandwidth usage
+
+As of now, we present a web app that we feel would be the major way of using our project. However, we are also quite interested in pairing this with existing on-field cameras and thus make it quite useful for certain crop growers.
+
+Another idea we are currently working on which is quite straightforward to implement is about adding accounts and keeping a track of images the user has run this model on. Currently, we do not store any info about the images uploaded. It would be quite useful to track images added by farmers and store info about disease stats for crops in a designated piece of land on which we could model our suggestion to cure the disease. And would be quite helpful for crop growers.
+
+
