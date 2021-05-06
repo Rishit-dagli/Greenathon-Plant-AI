@@ -114,3 +114,13 @@ Another idea we are currently working on which is quite straightforward to imple
 ## Thank you for reading!
 
 As we mentioned earlier, we are very excited to hear from you, the awesome community about how we could do better, and are looking for feedback! If you find our project useful and want to support us; consider giving a star ⭐ on the project’s [GitHub repo](https://github.com/Rishit-dagli/Greenathon-Plant-AI).
+
+## Citations
+
+[1] Alexandratos, Nikos, and Jelle Bruinsma. “World Agriculture towards 2030/2050: The 2012 Revision.” AgEcon Search, 11 June 2012, doi:10.22004/ag.econ.288998.
+
+[2] Hughes, David P., and Marcel Salathe. “An Open Access Repository of Images on Plant Health to Enable the Development of Mobile Disease Diagnostics.” ArXiv:1511.08060 [Cs], Apr. 2016. arXiv.org, http://arxiv.org/abs/1511.08060.
+
+[3] Howard, Andrew G., et al. “MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications.” ArXiv:1704.04861 [Cs], Apr. 2017. arXiv.org, http://arxiv.org/abs/1704.04861.
+
+[4] Russakovsky, Olga, et al. “ImageNet Large Scale Visual Recognition Challenge.” ArXiv:1409.0575 [Cs], Jan. 2015. arXiv.org, http://arxiv.org/abs/1409.0575.
