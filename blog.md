@@ -111,4 +111,6 @@ As of now, we present a web app that we feel would be the major way of using our
 
 Another idea we are currently working on which is quite straightforward to implement is about adding accounts and keeping a track of images the user has run this model on. Currently, we do not store any info about the images uploaded. It would be quite useful to track images added by farmers and store info about disease stats for crops in a designated piece of land on which we could model our suggestion to cure the disease. And would be quite helpful for crop growers.
 
+## Thank you for reading!
 
+As we mentioned earlier, we are very excited to hear from you, the awesome community about how we could do better, and are looking for feedback! If you find our project useful and want to support us; consider giving a star ⭐ on the project’s [GitHub repo](https://github.com/Rishit-dagli/Greenathon-Plant-AI).
