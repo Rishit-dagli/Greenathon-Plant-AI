@@ -45,3 +45,29 @@ As we mentioned earlier we expect most of the traffic and usage of our project f
 This also enables us to have blazing fast performance with our ML model. We use this model on the client-side with TensorFlow JS APIs which further also allows us to boost performance with a WebGL backend.
 
 The below sections talk about how we built this project in greater detail and we also explain the reason behind some decisions we made for the project and how we worked on each of the features you saw earlier.
+
+## Building the Machine Learning Model
+
+Building the Machine Learning Model is a core part of our project consequently we spent quite some time experimenting and building the Machine Learning Model for this project. We had to build a machine learning model that:
+- gives acceptable performance
+- not too heavy since we want to run the model on low-end devices
+
+We train our model on the Plant Village dataset [2] on about 87,000 (+ augmented images) healthy and unhealthy leaf images. These images were classified into thirty-eight categories based on species and diseases.
+
+We experimented with quite a few architectures and even tried building our own architectures from scratch using Azure Machine Learning to keep track, orchestrate and perform our experiments in a well-defined manner.
+
+It turned out that transfer learning on top of MobileNet [3] was indeed quite promising for our use case. The model we built doing gave us the acceptable performance and was also close to twelve megabytes ins size, not a heavy one. Consequently, we built a model on top of MobileNet using initial weights from MobileNet trained on ImageNet [4].
+
+We also have made a subset of our experiments used to train the final model public through this project’s GitHub repository.
+
+We now had a TensorFlow SavedModel trained and ready to be used. As mentioned earlier in this article we are also interested in performing Machine Learning on the client-side on the browser. To do so in a consistent and easy manner we use [TensorFlow JS](https://www.tensorflow.org/js/).
+
+To use our model with TensorFlow JS on the browser, we first needed to convert our model to the TFJS format. Fortunately, this was quite easy for us to do with the [TensorFlow JS converter](https://www.tensorflow.org/js/) which allowed us to easily convert our TensorFlow SavedModel to TFJS format. The TensorFlow JS Converter further also optimizes the model for being served on the web by sharding the weights into 4MB files so that they can be cached by browsers. It also attempts to simplify the model graph itself using [Grappler](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core/grappler) such that the model outputs remain the same. Graph simplifications often include folding together adjacent operations, eliminating common subgraphs, etc.
+
+After doing so our TFJS format model has the following files, which would be loaded on the web app:
+- `model.json` (the dataflow graph and weight manifest)
+- `group1-shard\*of\*` (collection of binary weight files)
+
+Now that we have our TFJS model ready to be used, we wanted to allow us to run the TFJS model on browsers. To do so we again made use of the TensorFlow JS Converter that includes an API for loading and executing the model in the browser with TensorFlow.js🚀. We are excited to run our model on the client-side since this ability to run deep networks on personal mobile devices improves user experience, offering anytime, anywhere access, with additional benefits for security, privacy, and energy consumption.
+
+To further make our model even more accessible and usable to others in the community we also provide a hosted model API built with [TensorFlow Serving](https://www.tensorflow.org/tfx) and hosted with Azure Container Instances at this stage. This makes it easier than ever to use our model, now just a single API call away!🚀
