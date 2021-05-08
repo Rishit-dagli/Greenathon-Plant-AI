@@ -123,6 +123,8 @@ Another idea we are currently working on which is quite straightforward to imple
 
 As we mentioned earlier, we are very excited to hear from you, the awesome community about how we could do better, and are looking for feedback! If you find our project useful and want to support us; consider giving a star ⭐ on the project’s [GitHub repo](https://github.com/Rishit-dagli/Greenathon-Plant-AI).
 
+Many thanks to [Ali Mustufa Shaikh](https://github.com/ialimustufa) and [Jen Looper](https://github.com/jlooper) for helping me to make this better :)
+
 ## Citations
 
 [1] Alexandratos, Nikos, and Jelle Bruinsma. “World Agriculture towards 2030/2050: The 2012 Revision.” AgEcon Search, 11 June 2012, doi:10.22004/ag.econ.288998.
