@@ -78,6 +78,28 @@ After doing so our TFJS format model has the following files, which would be loa
 
 Now that we have our TFJS model ready to be used, we wanted to allow us to run the TFJS model on browsers. To do so we again made use of the TensorFlow JS Converter that includes an API for loading and executing the model in the browser with TensorFlow.js🚀. We are excited to run our model on the client-side since this ability to run deep networks on personal mobile devices improves user experience, offering anytime, anywhere access, with additional benefits for security, privacy, and energy consumption.
 
+### Consuming the trained model
+
+We are very excited to see how the community uses our project as a whole and also our Machine Learning models. Thus, we make it super easy for you to consume our trained models. To do so we recommend you to use our models from [TensorFlow Hub](https://www.tensorflow.org/hub) which allows you to reuse our models very easily with a few lines of code and save you from manual work.
+
+> To use the SavedModel we expect you to have installed [TensorFlow Hub](https://www.tensorflow.org/hub/installation).
+
+The TensorFlow SavedModel can be easily used with `hub.load` as:
+
+```py
+model = hub.load("https://tfhub.dev/rishit-dagli/plant-disease/1")
+```
+
+The output is a batch of logits vectors. The indices into the logits are the `num_classes = 38` classes of the classification from the original training (see above). The mapping from indices to class labels can be found in the file at https://github.com/Rishit-dagli/Greenathon-Plant-AI/releases/download/v0.1.0/class_indices.json with each label in the following format: `${SPECIES}__${DISEASE}`. In case the disease name consists of two words it would be in the following format: `${DISEASE_WORD_1}_${DISEASE_WORD_2}`
+
+The input images are expected to have color values in the range `[0,1]`, following the [common image input](https://www.tensorflow.org/hub/common_signatures/images#input) conventions. The expected size of the input images is height x width = 224 x 224 pixels by default, but other input sizes are possible (within limits).
+
+You could also directly consume our TFJS model from TensorFlow Hub as:
+
+```js
+tf.loadLayersModel("https://tfhub.dev/rishit-dagli/tfjs-model/plant-disease/default/1", { fromTFHub: true })
+```
+
 ### Hosted Model API
 
 To further make our model even more accessible and usable to others in the community we also provide a hosted model API built with [TensorFlow Serving](https://www.tensorflow.org/tfx) and hosted with Azure Container Instances at this stage. This makes it easier than ever to use our model, now just a single API call away!🚀
