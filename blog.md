@@ -11,6 +11,8 @@ Hello developers 👋! In this article, we introduce our project “Plant AI ☘
 
 Plant AI ☘️ is a web application 🌐 that helps one to easily diagnose diseases in plants from plant images, using Machine Learning possible all on the web. We provide an interface on the website where you can simply upload images of your plant leaves since we majorly focus on plant leaf diseases and instantly know diseases the plant has. We further also provide users easy ways to solve the diagnosed disease.
 
+> As of now our model supports 38 categories of healthy and unhealthy plant images across species and diseases. The complete list of supported diseases and species can be found [here](https://coverimages.blob.core.windows.net/plantai-tfjs-model/labels.txt). In case you are looking for an image to test this out, find one testing image [here](https://drive.google.com/drive/folders/13gjzw--osiXXZdIrhtyzB6WvCtHY36Wj?usp=sharing)
+
 Guess, what? This project is also completely open-sourced⭐, here is the GitHub repo for this project: https://github.com/Rishit-dagli/Greenathon-Plant-AI
 
 ## The motivation behind building this
@@ -52,13 +54,19 @@ Building the Machine Learning Model is a core part of our project consequently w
 - gives acceptable performance
 - not too heavy since we want to run the model on low-end devices
 
-We train our model on the Plant Village dataset [2] on about 87,000 (+ augmented images) healthy and unhealthy leaf images. These images were classified into thirty-eight categories based on species and diseases.
+### Training the model
+
+We train our model on the Plant Village dataset [2] on about 87,000 (+ augmented images) healthy and unhealthy leaf images. These images were classified into thirty-eight categories based on species and diseases. Here are a couple of images the model was trained on:
+
+![](media/training-images.png)
 
 We experimented with quite a few architectures and even tried building our own architectures from scratch using Azure Machine Learning to keep track, orchestrate and perform our experiments in a well-defined manner.
 
 It turned out that transfer learning on top of MobileNet [3] was indeed quite promising for our use case. The model we built doing gave us the acceptable performance and was also close to twelve megabytes ins size, not a heavy one. Consequently, we built a model on top of MobileNet using initial weights from MobileNet trained on ImageNet [4].
 
 We also have made a subset of our experiments used to train the final model public through this project’s GitHub repository.
+
+### Running the model on browser
 
 We now had a TensorFlow SavedModel trained and ready to be used. As mentioned earlier in this article we are also interested in performing Machine Learning on the client-side on the browser. To do so in a consistent and easy manner we use [TensorFlow JS](https://www.tensorflow.org/js/).
 
@@ -69,6 +77,30 @@ After doing so our TFJS format model has the following files, which would be loa
 - `group1-shard\*of\*` (collection of binary weight files)
 
 Now that we have our TFJS model ready to be used, we wanted to allow us to run the TFJS model on browsers. To do so we again made use of the TensorFlow JS Converter that includes an API for loading and executing the model in the browser with TensorFlow.js🚀. We are excited to run our model on the client-side since this ability to run deep networks on personal mobile devices improves user experience, offering anytime, anywhere access, with additional benefits for security, privacy, and energy consumption.
+
+### Consuming the trained model
+
+We are very excited to see how the community uses our project as a whole and also our Machine Learning models. Thus, we make it super easy for you to consume our trained models. To do so we recommend you to use our models from [TensorFlow Hub](https://www.tensorflow.org/hub) which allows you to reuse our models very easily with a few lines of code and save you from manual work.
+
+> To use the SavedModel we expect you to have installed [TensorFlow Hub](https://www.tensorflow.org/hub/installation).
+
+The TensorFlow SavedModel can be easily used with `hub.load` as:
+
+```py
+model = hub.load("https://tfhub.dev/rishit-dagli/plant-disease/1")
+```
+
+The output is a batch of logits vectors. The indices into the logits are the `num_classes = 38` classes of the classification from the original training (see above). The mapping from indices to class labels can be found in the file at https://github.com/Rishit-dagli/Greenathon-Plant-AI/releases/download/v0.1.0/class_indices.json with each label in the following format: `${SPECIES}__${DISEASE}`. In case the disease name consists of two words it would be in the following format: `${DISEASE_WORD_1}_${DISEASE_WORD_2}`
+
+The input images are expected to have color values in the range `[0,1]`, following the [common image input](https://www.tensorflow.org/hub/common_signatures/images#input) conventions. The expected size of the input images is height x width = 224 x 224 pixels by default, but other input sizes are possible (within limits).
+
+You could also directly consume our TFJS model from TensorFlow Hub as:
+
+```js
+tf.loadLayersModel("https://tfhub.dev/rishit-dagli/tfjs-model/plant-disease/default/1", { fromTFHub: true })
+```
+
+### Hosted Model API
 
 To further make our model even more accessible and usable to others in the community we also provide a hosted model API built with [TensorFlow Serving](https://www.tensorflow.org/tfx) and hosted with Azure Container Instances at this stage. This makes it easier than ever to use our model, now just a single API call away!🚀
 
@@ -120,6 +152,8 @@ Another idea we are currently working on which is quite straightforward to imple
 ## Thank you for reading!
 
 As we mentioned earlier, we are very excited to hear from you, the awesome community about how we could do better, and are looking for feedback! If you find our project useful and want to support us; consider giving a star ⭐ on the project’s [GitHub repo](https://github.com/Rishit-dagli/Greenathon-Plant-AI).
+
+Many thanks to [Ali Mustufa Shaikh](https://github.com/ialimustufa) and [Jen Looper](https://github.com/jlooper) for helping me to make this better :)
 
 ## Citations
 
