@@ -66,6 +66,8 @@ It turned out that transfer learning on top of MobileNet [3] was indeed quite pr
 
 We also have made a subset of our experiments used to train the final model public through this project’s GitHub repository.
 
+### Running the model on browser
+
 We now had a TensorFlow SavedModel trained and ready to be used. As mentioned earlier in this article we are also interested in performing Machine Learning on the client-side on the browser. To do so in a consistent and easy manner we use [TensorFlow JS](https://www.tensorflow.org/js/).
 
 To use our model with TensorFlow JS on the browser, we first needed to convert our model to the TFJS format. Fortunately, this was quite easy for us to do with the [TensorFlow JS converter](https://www.tensorflow.org/js/) which allowed us to easily convert our TensorFlow SavedModel to TFJS format. The TensorFlow JS Converter further also optimizes the model for being served on the web by sharding the weights into 4MB files so that they can be cached by browsers. It also attempts to simplify the model graph itself using [Grappler](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core/grappler) such that the model outputs remain the same. Graph simplifications often include folding together adjacent operations, eliminating common subgraphs, etc.
@@ -75,6 +77,8 @@ After doing so our TFJS format model has the following files, which would be loa
 - `group1-shard\*of\*` (collection of binary weight files)
 
 Now that we have our TFJS model ready to be used, we wanted to allow us to run the TFJS model on browsers. To do so we again made use of the TensorFlow JS Converter that includes an API for loading and executing the model in the browser with TensorFlow.js🚀. We are excited to run our model on the client-side since this ability to run deep networks on personal mobile devices improves user experience, offering anytime, anywhere access, with additional benefits for security, privacy, and energy consumption.
+
+### Hosted Model API
 
 To further make our model even more accessible and usable to others in the community we also provide a hosted model API built with [TensorFlow Serving](https://www.tensorflow.org/tfx) and hosted with Azure Container Instances at this stage. This makes it easier than ever to use our model, now just a single API call away!🚀
 
