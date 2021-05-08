@@ -52,7 +52,9 @@ Building the Machine Learning Model is a core part of our project consequently w
 - gives acceptable performance
 - not too heavy since we want to run the model on low-end devices
 
-We train our model on the Plant Village dataset [2] on about 87,000 (+ augmented images) healthy and unhealthy leaf images. These images were classified into thirty-eight categories based on species and diseases.
+We train our model on the Plant Village dataset [2] on about 87,000 (+ augmented images) healthy and unhealthy leaf images. These images were classified into thirty-eight categories based on species and diseases. Here are a couple of images the model was trained on:
+
+![](media/training-images.png)
 
 We experimented with quite a few architectures and even tried building our own architectures from scratch using Azure Machine Learning to keep track, orchestrate and perform our experiments in a well-defined manner.
 
