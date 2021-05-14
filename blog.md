@@ -11,6 +11,7 @@ Hello developers 👋! In this article, we introduce our project “Plant AI ☘
 
 Plant AI ☘️ is a web application 🌐 that helps one to easily diagnose diseases in plants from plant images, using Machine Learning possible all on the web. We provide an interface on the website where you can simply upload images of your plant leaves since we majorly focus on plant leaf diseases and instantly know diseases the plant has. We further also provide users easy ways to solve the diagnosed disease.
 
+<!-- markdown-link-check-disable-next-line -->
 > As of now our model supports 38 categories of healthy and unhealthy plant images across species and diseases. The complete list of supported diseases and species can be found [here](https://coverimages.blob.core.windows.net/plantai-tfjs-model/labels.txt). In case you are looking for an image to test this out, find one testing image [here](https://drive.google.com/drive/folders/13gjzw--osiXXZdIrhtyzB6WvCtHY36Wj?usp=sharing)
 
 Guess, what? This project is also completely open-sourced⭐, here is the GitHub repo for this project: https://github.com/Rishit-dagli/Greenathon-Plant-AI
