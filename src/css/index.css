@@ -27,7 +27,7 @@ body {
   height: 900px;
   display: flex;
   flex-direction: column;
-  background-image: url(./../assets/images/Background.png);
+  background-image: url(./../assets/images/img4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
